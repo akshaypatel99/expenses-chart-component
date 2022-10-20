@@ -1,0 +1,245 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+  --font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--font-size);
+  color: var(--dark-brown);
+  background-color: var(--cream);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+article {
+  width: 100%;
+  max-width: 425px;
+  min-width: 300px;
+  min-height: 500px;
+}
+
+.balance-container {
+  background-color: var(--soft-red);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.balance-title {
+  font-size: calc(0.8 * var(--font-size));
+  color: var(--very-pale-orange);
+}
+
+.balance-total {
+  font-size: calc(1.25 * var(--font-size));
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.logo {
+  width: 3.5rem;
+}
+
+.chart-container {
+  background-color: var(--very-pale-orange);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: calc(1.25 * var(--font-size));
+}
+
+.chart {
+  width: 100%;
+  min-height: 280px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.day {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 36px;
+}
+
+.day-name {
+  font-size: calc(0.65 * var(--font-size));
+  color: var(--medium-brown);
+  margin-top: 0.5rem;
+}
+
+.day-bar {
+  width: 86%;
+  min-width: 32px;
+  height: 250px;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+}
+
+.day-amount {
+  width: 94%;
+  min-width: 36px;
+  font-size: calc(0.6 * var(--font-size));
+  color: white;
+  background-color: var(--dark-brown);
+  padding: 0.3rem 0.2rem;
+  border-radius: 5px;
+  margin-bottom: 0.25rem;
+  display: none;
+  justify-content: center;
+}
+
+.day:hover .day-bar {
+  opacity: 0.6;
+}
+
+.day:hover .day-amount {
+  display: flex;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--cream);
+  margin: 1rem 0;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(0.8 * var(--font-size));
+}
+
+.total-title {
+  color: var(--medium-brown);
+  margin-bottom: 0.25rem;
+}
+
+.total-amount {
+  font-size: calc(1.6 * var(--font-size));
+  font-weight: 700;
+}
+
+.difference {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.percentage {
+  font-weight: 700;
+}
+
+.time {
+  color: var(--medium-brown);
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+}
+
+@media (min-width: 1024px){
+  article {
+    width: 550px;
+    min-width: none;
+    max-width: none;
+    min-height: auto;
+  }
+
+  .balance-container {
+    border-radius: 20px;
+    padding: 1.75rem;
+  }
+
+  .balance-title {
+    font-size: var(--font-size);
+  }
+  
+  .balance-total {
+    font-size: calc(1.75 * var(--font-size));
+    margin-top: 0.5rem;
+  }
+  
+  .logo {
+    width: 4rem;
+  }
+  
+  .chart-container {
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: calc(1.75 * var(--font-size));
+  }
+  
+  .day {
+    min-width: 40px;
+    margin: 0 0.25rem;
+  }
+  
+  .day-name {
+    font-size: calc(0.8 * var(--font-size));
+  }
+  
+  .day-amount {
+    width: 95%;
+    font-size: calc(0.8 * var(--font-size));
+    background-color: var(--dark-brown);
+    padding: 0.5rem 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .line {
+    margin: 2rem 0;
+  }
+  
+  .total-container {
+    font-size: var(--font-size);
+  }
+  
+  .total-title {
+    color: var(--medium-brown);
+    margin-bottom: 0.25rem;
+  }
+  
+  .total-amount {
+    font-size: calc(2.25 * var(--font-size));
+  }
+}

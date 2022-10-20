@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+
+		<title>Frontend Mentor | Expenses chart component</title>
+
+		<style>
+			.attribution {
+				font-size: 10px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<article>
+				<header class="balance-container">
+					<div class="balance">
+						<p class="balance-title">My balance</p>
+						<p class="balance-total">$921.48</p>
+					</div>
+					<img src="./images/logo.svg" alt="bank logo" class="logo" />
+				</header>
+
+				<section class="chart-container">
+					<h1>Spending - Last 7 days</h1>
+					<div class="chart">
+						<div class="day" data-day="mon">
+							<div class="day-name" id="mon"><p>mon</p></div>
+							<div class="day-bar" id="mon-bar"></div>
+							<div class="day-amount" id="mon-amount"></div>
+						</div>
+						<div class="day" data-day="tue">
+							<div class="day-name" id="tue"><p>tue</p></div>
+							<div class="day-bar" id="tue-bar"></div>
+							<div class="day-amount" id="tue-amount"></div>
+						</div>
+						<div class="day" data-day="wed">
+							<div class="day-name" id="wed"><p>wed</p></div>
+							<div class="day-bar" id="wed-bar"></div>
+							<div class="day-amount" id="wed-amount"></div>
+						</div>
+						<div class="day" data-day="thu">
+							<div class="day-name" id="thu"><p>thu</p></div>
+							<div class="day-bar" id="thu-bar"></div>
+							<div class="day-amount" id="thu-amount"></div>
+						</div>
+						<div class="day" data-day="fri">
+							<div class="day-name" id="fri"><p>fri</p></div>
+							<div class="day-bar" id="fri-bar"></div>
+							<div class="day-amount" id="fri-amount"></div>
+						</div>
+						<div class="day" data-day="sat">
+							<div class="day-name" id="sat"><p>sat</p></div>
+							<div class="day-bar" id="sat-bar"></div>
+							<div class="day-amount" id="sat-amount"></div>
+						</div>
+						<div class="day" data-day="sun">
+							<div class="day-name" id="sun"><p>sun</p></div>
+							<div class="day-bar" id="sun-bar"></div>
+							<div class="day-amount" id="sun-amount"></div>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="total-container">
+						<div class="total">
+							<p class="total-title">Total this month</p>
+							<p class="total-amount">$478.33</p>
+						</div>
+						<div class="difference">
+							<p class="percentage">+2.4%</p>
+							<p class="time">from last month</p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</main>
+
+		<!-- mon tue wed thu fri sat sun -->
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://www.akshaypatel.dev">Akshay Patel</a>.
+		</footer>
+
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
