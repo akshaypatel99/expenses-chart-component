@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/akshaypatel99/frontend-mentor/tree/main/expenses-chart-component](https://github.com/akshaypatel99/frontend-mentor/tree/main/expenses-chart-component)
+- Solution URL: [https://github.com/akshaypatel99/expenses-chart-component](https://github.com/akshaypatel99/expenses-chart-component)
 - Live Site URL: [https://akshaypatel99.github.io/expenses-chart-component/](https://akshaypatel99.github.io/expenses-chart-component/)
 
 ## My process
