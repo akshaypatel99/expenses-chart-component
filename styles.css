@@ -5,7 +5,7 @@
   --medium-brown: hsl(28, 10%, 53%);
   --cream: hsl(27, 66%, 92%);
   --very-pale-orange: hsl(33, 100%, 98%);
-  --font-size: 18px;
+  --font-size: 1.125rem;
 }
 
 * {
@@ -50,12 +50,12 @@ article {
 }
 
 .balance-title {
-  font-size: calc(0.8 * var(--font-size));
+  font-size: 0.8em;
   color: var(--very-pale-orange);
 }
 
 .balance-total {
-  font-size: calc(1.25 * var(--font-size));
+  font-size: 1.25em;
   font-weight: 700;
   margin-top: 0.25rem;
 }
@@ -74,7 +74,7 @@ article {
 }
 
 h1 {
-  font-size: calc(1.25 * var(--font-size));
+  font-size: 1.25em;
 }
 
 .chart {
@@ -95,7 +95,7 @@ h1 {
 }
 
 .day-name {
-  font-size: calc(0.65 * var(--font-size));
+  font-size: 0.65em;
   color: var(--medium-brown);
   margin-top: 0.5rem;
 }
@@ -111,7 +111,7 @@ h1 {
 .day-amount {
   width: 94%;
   min-width: 36px;
-  font-size: calc(0.6 * var(--font-size));
+  font-size: 0.6em;
   color: white;
   background-color: var(--dark-brown);
   padding: 0.3rem 0.2rem;
@@ -121,11 +121,13 @@ h1 {
   justify-content: center;
 }
 
-.day:hover .day-bar {
+.day:hover .day-bar,
+.day:focus-visible .day-bar {
   opacity: 0.6;
 }
 
-.day:hover .day-amount {
+.day:hover .day-amount,
+.day:focus-visible .day-amount {
   display: flex;
 }
 
@@ -139,7 +141,7 @@ h1 {
 .total-container {
   display: flex;
   justify-content: space-between;
-  font-size: calc(0.8 * var(--font-size));
+  font-size: 0.8em;
 }
 
 .total-title {
@@ -148,7 +150,7 @@ h1 {
 }
 
 .total-amount {
-  font-size: calc(1.6 * var(--font-size));
+  font-size: 1.6em;
   font-weight: 700;
 }
 
@@ -191,7 +193,7 @@ h1 {
   }
   
   .balance-total {
-    font-size: calc(1.75 * var(--font-size));
+    font-size: 1.75em;
     margin-top: 0.5rem;
   }
   
@@ -206,7 +208,7 @@ h1 {
   }
   
   h1 {
-    font-size: calc(1.75 * var(--font-size));
+    font-size: 1.75em;
   }
   
   .day {
@@ -215,12 +217,12 @@ h1 {
   }
   
   .day-name {
-    font-size: calc(0.8 * var(--font-size));
+    font-size: 0.8em;
   }
   
   .day-amount {
     width: 95%;
-    font-size: calc(0.8 * var(--font-size));
+    font-size: 0.8em;
     background-color: var(--dark-brown);
     padding: 0.5rem 0.3rem;
     margin-bottom: 0.5rem;
@@ -240,6 +242,6 @@ h1 {
   }
   
   .total-amount {
-    font-size: calc(2.25 * var(--font-size));
+    font-size: 2.25em;
   }
 }

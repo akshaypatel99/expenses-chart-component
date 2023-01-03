@@ -9,14 +9,12 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+			href="./images/favicon-32x32.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
 
 		<title>Frontend Mentor | Expenses chart component</title>
@@ -39,44 +37,62 @@
 						<p class="balance-title">My balance</p>
 						<p class="balance-total">$921.48</p>
 					</div>
-					<img src="./images/logo.svg" alt="bank logo" class="logo" />
+					<img
+						src="./images/logo.svg"
+						alt="bank logo"
+						class="logo"
+						aria-hidden="true" />
 				</header>
 
 				<section class="chart-container">
 					<h1>Spending - Last 7 days</h1>
 					<div class="chart">
-						<div class="day" data-day="mon">
-							<div class="day-name" id="mon"><p>mon</p></div>
+						<div class="day" data-day="mon" tabindex="0">
+							<div class="day-name" id="mon" aria-label="monday">
+								<p>mon</p>
+							</div>
 							<div class="day-bar" id="mon-bar"></div>
 							<div class="day-amount" id="mon-amount"></div>
 						</div>
-						<div class="day" data-day="tue">
-							<div class="day-name" id="tue"><p>tue</p></div>
+						<div class="day" data-day="tue" tabindex="0">
+							<div class="day-name" id="tue" aria-label="tuesday">
+								<p>tue</p>
+							</div>
 							<div class="day-bar" id="tue-bar"></div>
 							<div class="day-amount" id="tue-amount"></div>
 						</div>
-						<div class="day" data-day="wed">
-							<div class="day-name" id="wed"><p>wed</p></div>
+						<div class="day" data-day="wed" tabindex="0">
+							<div class="day-name" id="wed" aria-label="wednesday">
+								<p>wed</p>
+							</div>
 							<div class="day-bar" id="wed-bar"></div>
 							<div class="day-amount" id="wed-amount"></div>
 						</div>
-						<div class="day" data-day="thu">
-							<div class="day-name" id="thu"><p>thu</p></div>
+						<div class="day" data-day="thu" tabindex="0">
+							<div class="day-name" id="thu" aria-label="thursday">
+								<p>thu</p>
+							</div>
 							<div class="day-bar" id="thu-bar"></div>
 							<div class="day-amount" id="thu-amount"></div>
 						</div>
-						<div class="day" data-day="fri">
-							<div class="day-name" id="fri"><p>fri</p></div>
+						<div class="day" data-day="fri" tabindex="0">
+							<div class="day-name" id="fri" aria-label="friday">
+								<p>fri</p>
+							</div>
 							<div class="day-bar" id="fri-bar"></div>
 							<div class="day-amount" id="fri-amount"></div>
 						</div>
-						<div class="day" data-day="sat">
-							<div class="day-name" id="sat"><p>sat</p></div>
+						<div class="day" data-day="sat" tabindex="0">
+							<div class="day-name" id="sat" aria-label="saturday">
+								<p>sat</p>
+							</div>
 							<div class="day-bar" id="sat-bar"></div>
 							<div class="day-amount" id="sat-amount"></div>
 						</div>
-						<div class="day" data-day="sun">
-							<div class="day-name" id="sun"><p>sun</p></div>
+						<div class="day" data-day="sun" tabindex="0">
+							<div class="day-name" id="sun" aria-label="sunday">
+								<p>sun</p>
+							</div>
 							<div class="day-bar" id="sun-bar"></div>
 							<div class="day-amount" id="sun-amount"></div>
 						</div>
